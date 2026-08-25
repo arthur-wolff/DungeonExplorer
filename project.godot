@@ -11,8 +11,15 @@ config_version=5
 [application]
 
 config/name="DungeonExplorer"
+run/main_scene="uid://b6j68hsiopo0w"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://box3l4hgftce"
+SceneManager="*uid://b7w7jho5v0cma"
+EventBus="*uid://dugift2gu1s8f"
 
 [display]
 
