@@ -8,7 +8,7 @@ func change_scene(scene_path: String) -> void:
 	get_tree().change_scene_to_file(scene_path)
 
 func go_to_world()->void:
-	change_scene("res://scenes/world/")
+	change_scene("res://scenes/world/World.tscn")
 
 func go_to_dungeon()->void:
 	change_scene("res://scenes/dungeon/")
