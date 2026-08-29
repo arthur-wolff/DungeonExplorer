@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://df7ixsn73i5jf"]
+
+[ext_resource type="Script" uid="uid://byfu5yloxrvuj" path="res://scripts/tests/DiceTest.gd" id="1_i55pk"]
+
+[node name="DiceTest" type="Node" unique_id=1838017032]
+script = ExtResource("1_i55pk")
