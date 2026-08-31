@@ -1,29 +1,31 @@
 extends Node
 
-var player = Character
+var player: Character
 
 var current_world: String = ""
 var current_dungeon:String = ""
+var current_state: GameState
 
-var game_state: String = "menu"
+enum GameState {MENU, WORLD, DUNGEON, COMBATE}
 
 func start_new_game () -> void:
 	print("New Game started")
-	game_state = "world"
 	current_dungeon = ""
 	current_world = "world_1"
+	current_state = GameState.WORLD
+	SceneManager.go_to_world()
 	create_player()
 
 func enter_dungeon (dungeon_id: String) -> void:
 	current_dungeon = dungeon_id
-	game_state = "dungeon"
+	current_state = GameState.DUNGEON
 	
 	print("Entering in dungeon: ", dungeon_id)
 
 func exit_dungeon () -> void:
 	current_dungeon = ""
-	game_state = "world"
-	
+	current_state = GameState.WORLD
+	SceneManager.go_to_world()
 	print("Exiting Dungeon")
 
 func create_player() -> void:
