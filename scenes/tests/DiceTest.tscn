@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://df7ixsn73i5jf"]
+
+[ext_resource type="Script" uid="uid://byfu5yloxrvuj" path="res://scripts/tests/DiceTest.gd" id="1_i55pk"]
+
+[node name="DiceTest" type="Node" unique_id=1838017032]
+script = ExtResource("1_i55pk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1880617535]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1009843360]
+layout_mode = 2
+text = "Dice Roll"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer" unique_id=1890719133]
+layout_mode = 2
+text = "2d6+3"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=254306734]
+layout_mode = 2
+action_mode = 0
+button_mask = 0
+text = "Roll"
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=126233697]
+layout_mode = 2
+text = "Dados"
+
+[node name="Label3" type="Label" parent="VBoxContainer" unique_id=634439202]
+layout_mode = 2
+text = "Resultado"
+
+[node name="Label4" type="Label" parent="VBoxContainer" unique_id=352461994]
+layout_mode = 2
+text = "Modificador"
+
+[node name="Label5" type="Label" parent="VBoxContainer" unique_id=1790082300]
+layout_mode = 2
+text = "Total"
